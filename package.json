@@ -2,15 +2,21 @@
   "name": "sample-ts-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/main.ts"
+    "start": "ts-node src/main.ts",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4"
   }
