@@ -1,6 +1,9 @@
 # sample-ts-project
 
-A sample TypeScript project
+A sample TypeScript project.
+
+Based on [NestJS's starter project](https://docs.nestjs.com/).
+
 
 ## TO-DO
 
