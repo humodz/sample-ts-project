@@ -9,8 +9,12 @@
     "start": "ts-node src/main.ts",
     "start:debug": "node --inspect-brk -r ts-node/register src/main.ts",
     "start:prod": "node -r source-map-support/register dist/main.js",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
     "test": "jest",
-    "lint": "eslint \"{src,test}/**/*.ts\" --fix"
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "keywords": [],
   "author": "",
