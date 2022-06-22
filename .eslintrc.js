@@ -21,5 +21,29 @@ module.exports = {
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
+
+      'curly': ['error', 'all'],
+      'eqeqeq': ['error', 'always'],
+      'one-var': ['error', 'never'],
+
+      '@typescript-eslint/naming-convention': 'error',
+      '@typescript-eslint/unbound-method': 'error',
+      '@typescript-eslint/prefer-for-of': 'error',
+
+      'no-restricted-syntax': [
+        'error',
+        {
+          selector: 'ForInStatement',
+          message: '"for (... in ...)" is not allowed',
+        },
+        {
+          selector: 'ExportDefaultDeclaration',
+          message: '"export default ..." is not allowed',
+        },
+        {
+          selector: 'ExportNamedDeclaration[specifiers.length>0]:not([source])',
+          message: '"export { ... }" is not allowed except when re-exporting',
+        },
+      ],
     },
   };
