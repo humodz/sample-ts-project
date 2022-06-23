@@ -2,7 +2,11 @@
   "name": "sample-ts-project",
   "version": "0.1.0",
   "description": "",
-  "private": true,
+  "files": [
+    "README.md",
+    "**/*.js",
+    "**/*.d.ts"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.build.json",
@@ -14,7 +18,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prepub": "npm run build && node scripts/copy-to-dist.js",
+    "pub": "npm publish ./dist"
   },
   "keywords": [],
   "author": "",
