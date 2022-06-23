@@ -44,6 +44,10 @@ module.exports = {
           message: '"export default ..." is not allowed',
         },
         {
+          selector: 'TsExportAssignment',
+          message: '"export = ..." is not allowed',
+        },
+        {
           selector: 'ExportNamedDeclaration[specifiers.length>0]:not([source])',
           message: '"export { ... }" is not allowed except when re-exporting',
         },
