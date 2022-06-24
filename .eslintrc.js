@@ -25,13 +25,13 @@ module.exports = {
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
 
-      'curly': ['error', 'all'],
-      'eqeqeq': ['error', 'always'],
-      'one-var': ['error', 'never'],
-
       '@typescript-eslint/naming-convention': 'error',
       '@typescript-eslint/unbound-method': 'error',
       '@typescript-eslint/prefer-for-of': 'error',
+
+      'curly': ['error', 'all'],
+      'eqeqeq': ['error', 'always'],
+      'one-var': ['error', 'never'],
 
       'no-restricted-syntax': [
         'error',
