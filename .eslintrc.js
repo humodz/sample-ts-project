@@ -44,7 +44,7 @@ module.exports = {
         message: '"export default ..." is not allowed',
       },
       {
-        selector: 'TsExportAssignment',
+        selector: 'TSExportAssignment',
         message: '"export = ..." is not allowed',
       },
       {
