@@ -29,25 +29,5 @@ module.exports = {
     'curly': ['error', 'all'],
     'eqeqeq': ['error', 'always'],
     'one-var': ['error', 'never'],
-
-    'no-restricted-syntax': [
-      'error',
-      {
-        selector: 'ForInStatement',
-        message: '"for (... in ...)" is not allowed',
-      },
-      {
-        selector: 'ExportDefaultDeclaration',
-        message: '"export default ..." is not allowed',
-      },
-      {
-        selector: 'TSExportAssignment',
-        message: '"export = ..." is not allowed',
-      },
-      {
-        selector: 'ExportNamedDeclaration[specifiers.length>0]:not([source])',
-        message: '"export { ... }" is not allowed except when re-exporting',
-      },
-    ],
   },
 };
